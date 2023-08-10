@@ -121,8 +121,8 @@ public class AppointmentsAndCustomersController implements Initializable {
             appointmentsTable.setItems(appointmentDAO.get());
         } catch (SQLException e) {
             e.printStackTrace();
-            //TODO: Un-comment before submission.
-//            throw new RuntimeException(e);
+            //Un-comment before submission.
+            throw new RuntimeException(e);
         }
 
         // Create customerDAO object.
@@ -182,8 +182,8 @@ public class AppointmentsAndCustomersController implements Initializable {
             customersTable.setItems(customerDAO.get());
         } catch (SQLException e) {
             e.printStackTrace();
-            //TODO: Uncomment before submission.
-//            throw new RuntimeException(e);
+            // Uncomment before submission.
+            throw new RuntimeException(e);
         }
 
     }
@@ -289,8 +289,8 @@ public class AppointmentsAndCustomersController implements Initializable {
                 appointmentsTable.setItems(aDAO.get());
             } catch (SQLException e) {
                 e.printStackTrace();
-                //TODO: Un-comment before submission.
-//            throw new RuntimeException(e);
+                // Un-comment before submission.
+            throw new RuntimeException(e);
             }
 
         } else {
@@ -378,7 +378,6 @@ public class AppointmentsAndCustomersController implements Initializable {
         if (result.get() == ButtonType.OK) {
             // ... user chose OK
 
-            // TODO: REVIEW WITH TEACHER
             // Create appointmentDAO
             AppointmentDAO aDAO = new AppointmentDAO();
             // Get all appointments related to the customer ID

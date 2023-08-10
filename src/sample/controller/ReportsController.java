@@ -68,7 +68,7 @@ public class ReportsController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
             //TODO: Un-comment before submission.
-//            throw new RuntimeException(e);
+            throw new RuntimeException(e);
         }
 
 
